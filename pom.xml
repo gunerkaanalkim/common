@@ -23,7 +23,7 @@
         </developer>
     </developers>
 
-<!--    TODO-->
+    <!--    TODO    -->
     <scm>
         <connection>scm:git:git@github.com:hbelmiro/demo-library.git</connection>
         <developerConnection>scm:git:ssh://github.com:hbelmiro/demo-library.git</developerConnection>
