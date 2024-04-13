@@ -3,8 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Image version'
+        description: 'Artifact Version'
         required: true
+
 jobs:
   publish:
     runs-on: ubuntu-latest
