@@ -21,4 +21,4 @@ jobs:
       - name: Publish package
         run: mvn --batch-mode deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGE_REGISTRY_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
