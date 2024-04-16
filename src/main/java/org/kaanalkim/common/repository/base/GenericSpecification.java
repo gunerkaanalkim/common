@@ -1,9 +1,9 @@
 package org.kaanalkim.common.repository.base;
 
+import jakarta.persistence.criteria.*;
 import org.kaanalkim.common.exception.GenericSpecificationException;
 import org.springframework.data.jpa.domain.Specification;
 
-import javax.persistence.criteria.*;
 import java.util.List;
 
 import static org.kaanalkim.common.repository.base.Operators.*;
