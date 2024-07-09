@@ -41,10 +41,10 @@ public abstract class AbstractController<T extends AbstractEntity, D extends Abs
     }
 
     @GetMapping("get-all")
-    public ResponseEntity<Page<T>> getAll(@RequestParam(defaultValue = "0") Integer pageNo,
-                                          @RequestParam(defaultValue = "10") Integer pageSize,
-                                          @RequestParam(defaultValue = "id") String column,
-                                          @RequestParam(defaultValue = "asc") String order) {
+    public ResponseEntity<Page<T>> getAll(@RequestParam(defaultValue = "0", name = "pageNo") int pageNo,
+                                          @RequestParam(defaultValue = "10", name = "pageSize") int pageSize,
+                                          @RequestParam(defaultValue = "id", name = "column") String column,
+                                          @RequestParam(defaultValue = "asc", name = "order") String order) {
         final Page<T> all = getService().getAll(getService().getPaging(pageNo, pageSize, column, order));
 
         return ResponseEntity.ok().body(all);
